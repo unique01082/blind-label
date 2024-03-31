@@ -1,12 +1,12 @@
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   routes: [
-    { path: "/", component: "index" },
-    { path: "/docs", component: "docs" },
+    { path: '/', component: 'index' },
+    { path: '/about', component: 'about' },
   ],
 
-  npmClient: "yarn",
+  npmClient: 'yarn',
   tailwindcss: {},
-  plugins: ["@umijs/plugins/dist/tailwindcss"],
+  plugins: ['@umijs/plugins/dist/tailwindcss'],
 });

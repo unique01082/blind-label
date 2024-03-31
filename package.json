@@ -9,6 +9,9 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@dnd-kit/sortable": "^8.0.0",
+    "ahooks": "^3.7.10",
+    "lodash": "^4.17.21",
     "umi": "^4.1.6"
   },
   "devDependencies": {
