@@ -1,18 +1,22 @@
 import { Link, Outlet } from 'umi';
-import styles from './index.less';
 
 export default function Layout() {
   return (
-    <div className={styles.navs}>
-      <Outlet />
+    <div className="flex flex-col gap-2 min-h-[100vh]">
       <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/docs">Docs</Link>
+        </li>
+        <li>
+          <a href="https://github.com/umijs/umi">Github</a>
         </li>
       </ul>
+      <div className="flex flex-grow w-full">
+        <Outlet />
+      </div>
     </div>
   );
 }
